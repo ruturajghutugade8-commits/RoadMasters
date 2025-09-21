@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Payment Page</title>
+  <script src="https://cdn.jsdelivr.net/npm/qrcodejs/qrcode.min.js"></script>
+<link rel="stylesheet" href="pay.css"/>
+</head>
+<body>
+    <nav>
+    <a href="index.html">Home</a>
+    <a href="data.html">Bookings</a>
+    <a href="Owner File 2.html">Admin</a>
+  </nav>
+  <div class="card" id="paymentCard">
+    <h2>Payment Page</h2>
+    <div class="summary" id="bookingSummary"></div>
+
+    <div class="installments">
+      <label for="installmentPlan"><strong>Choose Installment Plan:</strong></label>
+      <select id="installmentPlan" onchange="updateInstallment()">
+        <option value="1">Full Payment (1 Installment)</option>
+        <option value="2">2 Installments</option>
+        <option value="3">3 Installments</option>
+      </select>
+    </div>
+
+    <p id="installmentInfo"></p>
+    <button class="gpay-btn" onclick="payNow()">Pay Installment</button>
+    <div id="qrcode"></div>
+    
+  </div>
+
+  <!-- ✅ Success screen -->
+  <div class="success-overlay" id="successOverlay">✅Payment is Done Thank You For Booking...!<button type="button" id="button2" onclick="window.location.href='rate.html'">Rate the car</button></div>
+  <script src="pay.js"></script>
+</body>
+</html>

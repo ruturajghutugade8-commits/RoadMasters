@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RoadMasters Site😎.</title>
+  <link rel="stylesheet" href="index.css"/>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="fixed-logo">
+      <img id="logoImg" src="https://i.pinimg.com/736x/84/07/2d/84072d8a50be4f086bf4107785dde3b8.jpg" />
+    </div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#cars">Cars</a></li>
+      <li><a href="#booking">Book a Car</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="data.html">Admin</a></li>
+    </ul>
+  </nav>
+
+  <!-- Fullscreen Logo Overlay -->
+  <div class="logo-overlay" id="logoOverlay">
+    <span class="close-btn" id="closeOverlay">&times;</span>
+    <img src="https://i.pinimg.com/736x/84/07/2d/84072d8a50be4f086bf4107785dde3b8.jpg" alt="Fullscreen Logo">
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Welcome to RoadMasters </h1>
+    <p>Book your dream car in minutes.</p><br>
+    <h5>Email: ruturajghutugade8@gmail.com</h5><br><br>
+  </section>
+
+  <!-- Car Images Section -->
+  <section id="cars">
+    <h2 class="add">Available Cars</h2>
+    <div class="cars-gallery">
+      <img src="https://imgd-ct.aeplcdn.com/1056x660/n/cw/ec/131907/xuv300-turbosport-exterior-right-front-three-quarter-8.jpeg?isig=0&q=75">
+      <img src="https://www.autoindustriya.com/images/posts/post18847.jpg">
+      <img src="https://images.91wheels.com/assets/b_images/main/models/profile/profile1731577693.jpg?width=420&q=60?w=420&q=80">
+      <img src="https://media.zigcdn.com/media/model/2017/Oct/tavera-front-cross-side-view_640x480.jpg">
+      <img src="https://imgd.aeplcdn.com/370x208/n/b9ncp9b_1800107.jpg?q=80">
+      <img src="https://imgd.aeplcdn.com/664x374/n/cw/ec/134287/city-exterior-right-front-three-quarter-78.jpeg?isig=0&q=80">
+      <img src="https://imgd.aeplcdn.com/370x208/n/wd5raeb_1756583.jpg?q=80">
+      <img src="https://imgd.aeplcdn.com/370x208/n/2s8mceb_1758191.jpg?q=80">
+      <p class="note"> UNLIMITED CARS ARE AVAILABLE IN ROADMASTERS </p>
+    </div>
+  </section>
+  <!-- Booking Form Section -->
+  <section class="booking" id="booking">
+    <h2 class="add">Book a Car</h2>
+    <form id="bookingForm">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" placeholder="Enter your name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" placeholder="Enter your email" required />
+
+      <label for="aadhar">Aadhar Number:</label>
+      <input type="text" id="aadhar" placeholder="Enter your Aadhar number" required />
+
+      <label for="dl">Driving License Number:</label>
+      <input type="text" id="dl" placeholder="Enter your DL number" required />
+
+      <label for="dl">Contact Number:</label>
+      <input type="tel" id="mob" placeholder="Enter your Contact number" required />
+
+      <label for="car">Select Car:</label>
+      <select id="car" required>
+        <option value="">--Choose a car--</option>
+        <option value="Mahendra SUV" data-price="5000">Mahendra SUV (2017) - ₹5000/day</option>
+        <option value="Inova" data-price="3000">Inova - ₹3000/day</option>
+        <option value="Swift" data-price="2500">Swift Dezire - ₹2500/day</option>
+        <option value="Tavera" data-price="1700">Tavera (2010) - ₹1700/day</option>
+        <option value="Toyota Camry" data-price="5500">Toyota Camry - ₹5500/day</option>
+        <option value="Honda City" data-price="3500">Honda City - ₹3500/day</option>
+        <option value="Mahindra XUV700" data-price="6000">Mahindra XUV700 - ₹6000/day</option>
+        <option value="BMW 5 Series" data-price="12000">BMW 5 Series - ₹12000/day</option>
+      </select>
+      
+      <label for="date">Booking Start Date:</label>
+      <input type="date" id="date" required />
+
+      <label for="date1">Booking End Date:</label>
+      <input type="date" id="date1" required />
+
+      <button type="submit">Book Now</button>
+    </form>
+
+    <p id="confirmationMessage"></p>
+  </section>
+
+  <!-- About Section -->
+ <div>
+  <section class="about" id="about">
+    <h2>About RoadMasters</h2>
+    <p>
+      RoadMasters is a premium car rental service dedicated to providing the best driving experience.
+      We offer a wide range of vehicles to meet your needs, whether it’s a weekend getaway or a business trip.
+      Our mission is to make car rental easy, reliable, and accessible for everyone.
+    </p>
+    <p>
+      With years of experience in the industry, we ensure every car is well-maintained, clean, and ready to drive.
+      Customer satisfaction is our top priority, and we strive to provide seamless booking and payment options.
+    </p>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <p>We'd love to hear from you! Reach out to us using the following contact details:</p>
+    
+    <p><strong>Email:</strong> ruturajghutugade8@gmail.com</p>
+    <p><strong>Phone:</strong> +91 80100 48725</p>
+    <p><strong>Address:</strong> chavare, Talsande, kolhapur, Maharashtra, India</p>
+  </section>
+</div>
+
+<script src="index.js"></script>
+
+</body>
+</html>

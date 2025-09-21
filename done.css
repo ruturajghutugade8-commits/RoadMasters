@@ -1,0 +1,68 @@
+/* 🌐 General Page Styling */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 50px;
+  background: #f5f7fa;
+}
+/* 🔹 Default margin for other divs */
+div {
+  margin-top: 200px;
+}
+
+/* 🎨 Button Styling */
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 1em;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+/* ✅ Green "Done" button */
+.done {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.done:hover {
+  background-color: #16a085;
+}
+
+/* 🔐 Login Box Styling (moved to top) */
+#loginBox {
+  position: absolute;        /* place relative to page */
+  top: 30px;                 /* distance from top */
+  left: 50%;                 /* horizontally center */
+  transform: translateX(-50%); /* center only on X-axis */
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+/* ✏️ Input fields inside login */
+input {
+  display: block;
+  margin: 10px auto;
+  padding: 8px;
+  width: 220px;
+}
+
+/* 🎨 Green login button */
+button {
+  padding: 8px 15px;
+  background: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* 🚫 Hide protected content until login */
+#pageContent {
+  display: none;
+  padding: 20px;
+}

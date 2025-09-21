@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Owner Response</title>
+  <link rel="stylesheet" href="done.css"/>
+</head>
+<body>
+  <!-- 🔐 Login Box -->
+  <div id="loginBox">
+    <h3>Admin Login</h3>
+    <input type="text" id="username" placeholder="Enter Admin Username">
+    <input type="password" id="password" placeholder="Enter Admin Password">
+    <button onclick="checkLogin()">Login</button>
+  </div>
+
+  <!-- 🔒 Protected Admin Content -->
+  <div id="pageContent">
+    <h1>✅ Payment Successful</h1>
+    <p>You can update payment status or reload Pay page.</p>
+
+    <!-- Mark Payment Done -->
+    <button class="done" onclick="markPaymentDone()">Mark Payment Done</button>
+  </div>
+
+  <script src="done.js"></script>
+</body>
+</html>

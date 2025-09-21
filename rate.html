@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Car Rating</title>
+  <link rel="stylesheet" href="rate.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="rating-card">
+    <h2>🚗 Rate Your Car Experience</h2>
+    <p class="subtitle">Your feedback helps us improve!</p>
+
+    <!-- Stars -->
+    <div class="stars" id="starContainer"></div>
+
+    <!-- Thumbs -->
+    <div class="thumbs">
+      <span id="thumbUp">👍</span>
+      <span id="thumbDown">👎</span>
+    </div>
+
+    <button id="submitRating">Submit Feedback</button>
+  </div>
+
+  <!-- Overlay after submission -->
+  <div class="overlay" id="overlay">
+    <div class="overlay-content">
+      <h1>✅ Your response has been stored!</h1>
+      <p>Thank you for sharing your feedback 🙏</p>
+    </div>
+  </div>
+
+  <script src="rate.js"></script>
+</body>
+</html>
